@@ -1,0 +1,132 @@
+* {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+#pokemon-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+h2{
+  margin: 0;
+  margin-top: 30px;
+  color:#7b8fa1;
+  font-weight: bold;
+}
+.pokemon-block:hover {
+  background-color: #fad6a5;
+}
+
+.pokemon-image-container img {
+  height: 120px;
+}
+
+.pokemon-block {
+  font-size: 20px;
+  background-image: url("./backgroundimage.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  box-sizing: border-box;
+  border: 1px solid;
+  margin: 10px;
+  padding: 10px;
+  gap: 15px;
+  border-radius: 22px;
+  box-shadow: 8px 8px 14px rgba(100, 100, 100, 0.5);
+}
+
+.popUp::backdrop {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+.popUp {
+  width: 500px;
+  height: 500px;
+  padding: 0;
+}
+
+.cerrar:hover {
+  background-color: #7b8fa1;
+}
+.cerrar {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 5px;
+  width: 18px;
+}
+
+p{
+  margin: 5px;
+  padding: 0;
+  font-size: 18px;
+}
+.info {
+  padding: 0;
+  margin: 0;
+}
+
+
+aside {
+  text-align: center;
+}
+
+#img-selected {
+  background-image: url("./backgroundimage.svg");
+  margin: 0;
+  padding: 0;
+}
+
+.info img {
+  margin: 30px;
+  width: 80%;
+}
+
+button {
+  margin-left: 45%;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  background-color: #cfb997;
+  border-radius: 10px;
+  height: 35px;
+  width: 200px;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+.btn-detail {
+  margin-left: 0%;
+  background-color: #7b8fa1;
+  font-size: 15px;
+}
+footer {
+  margin: 35px;
+  text-align: center;
+}
+
+@media (max-width: 1205px) {
+  #pokemon-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 965px) {
+  #pokemon-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 770px) {
+  #pokemon-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
